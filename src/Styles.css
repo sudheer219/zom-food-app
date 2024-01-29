@@ -1,0 +1,44 @@
+
+body {
+  font-family: "Heebo", sans-serif;
+}
+
+.hero-section{
+    background-image: url('../public/images/food-bg.jpg');
+    background-size: cover;
+    height: 45vh;
+    object-fit: contain;
+    position: relative;    
+}
+.hero-section::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(41 19 6 / 66%); 
+    background: linear-gradient(180deg, rgba(14,6,1,0.5970763305322129) 0%, rgba(41,19,6,0.577468487394958) 35%, rgba(41,19,6,0.5130427170868348) 100%);
+}
+
+.hero-text{
+    font-size: 3.4rem !important;
+}
+
+.custom-card{
+    border: 1px solid #e4e4e4;
+    width: 275px;
+}
+
+.custom-card .card-header{
+    background-color: #f4f4f4;
+    max-height: 170px;
+    overflow: hidden;
+    
+}
+
+.custom-card .card-header img{
+    width: fit-content;
+    width: 275px;
+    
+}
