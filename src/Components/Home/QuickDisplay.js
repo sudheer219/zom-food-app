@@ -8,8 +8,8 @@ const QuickDisplay = (props) => {
     if (mealData) {
       return mealData.map((item) => {
         return (
-          <div className="col-lg-3 mb-3 ">
-            <Link to={`/listing/${item.mealtype_id}`} key={item._id} className="text-decoration-none ">
+          <div className="col-lg-3 mb-3 " key={item.mealtype_id} >
+            <Link to={`/listing/${item.mealtype_id}`} className="text-decoration-none ">
               <div className="custom-card position-relative ">
                 <div className="card-header">
                   <img src={item.meal_image} alt={item.content} />

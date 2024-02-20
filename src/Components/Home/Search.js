@@ -7,7 +7,6 @@ class Search extends Component {
 
     constructor(props){
         super()
-        console.log("Inside Constructor--");
         this.state = {
             location: '',
             restaurants: ''
@@ -36,7 +35,6 @@ class Search extends Component {
 
     //http://3.17.216.66:4000/restaurant?stateId=1
     renderCitySelect = (event) => {
-        console.log(event.target.value);
         const stateId = event.target.value;
 
         fetch(`${base_url}/restaurant?stateId=${stateId}`, {method: 'GET'})
@@ -59,7 +57,6 @@ class Search extends Component {
 
 
     render() {
-        console.log("Inside render--");
         return (
             <main>
             <div className="hero-section d-flex flex-column justify-content-center  align-items-center text-white  ">
